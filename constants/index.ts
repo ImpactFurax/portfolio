@@ -31,8 +31,8 @@ export const skills = [
 ]
 
 export const projects = [
-  { id: 1, img: '/assets/images/project1_image1.png', title: 'Discordia' },
-  { id: 2, img: '/assets/images/project2.png', title: 'RoyalFurne' },
-  { id: 3, img: '/assets/images/project3.png', title: 'DragonStory' },
-  { id: 4, img: '/assets/images/project4.png', title: 'CookAndClick' },
+  { id: '1', title: 'Discordia', techno: ['NextJs', 'ReactJs', 'TailwindCSS', 'Shadcn/UI', 'MongoDB'], description: 'Discordia est un site qui permet aux utilisateurs de créer des fils de discussion d\'horreur en utilisant une image de leur choix comme point de départ.', screen: { bg: '#222222', icon: 'icon-project1.png'}, img: 'project1_image1.png', carroussel: ['project1_image1.png', 'project1_image2.png', 'project1_image3.png'], url: 'discordia-project.vercel.app/' },
+  { id: '2', title: 'RoyalFurne', techno: ['NextJs', 'ReactJs', 'TailwindCSS', 'Shadcn/UI', 'MongoDB'], description: 'Discordia est un site qui permet aux utilisateurs de créer des fils de discussion d\'horreur en utilisant une image de leur choix comme point de départ.', screen: { bg: '#222222', icon: 'icon-project1.png'}, img: 'project2_image1.png', carroussel: ['project1_image1.png', 'project1_image2.png'], url: 'royalfurne.vercel.app/' },
+  { id: '3', title: 'DragonStory', techno: ['NextJs', 'ReactJs', 'TailwindCSS', 'Shadcn/UI', 'MongoDB'], description: 'Discordia est un site qui permet aux utilisateurs de créer des fils de discussion d\'horreur en utilisant une image de leur choix comme point de départ.', screen: { bg: '#222222', icon: 'icon-project1.png'}, img: 'project3_image1.png', carroussel: ['project1_image1.png'], url: '' },
+  { id: '4', title: 'CookAndClick', techno: ['NextJs', 'ReactJs', 'TailwindCSS', 'Shadcn/UI', 'MongoDB'], description: 'Discordia est un site qui permet aux utilisateurs de créer des fils de discussion d\'horreur en utilisant une image de leur choix comme point de départ.', screen: { bg: '#222222', icon: 'icon-project1.png'}, img: 'project4_image1.png', carroussel: ['project1_image1.png', 'project1_image2.png', 'project1_image3.png'], url: '' },
 ] 

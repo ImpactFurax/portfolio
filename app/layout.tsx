@@ -9,6 +9,9 @@ const outfit = Outfit({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Jean BORT | Portfolio",
   description: "Bienvenue sur le portfolio de BORT Jean",
+  icons: {
+    icon: '/assets/favicon.png'
+  }
 };
 
 export default function RootLayout({

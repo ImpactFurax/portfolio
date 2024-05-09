@@ -19,12 +19,14 @@ const Navbar = () => {
         </div>
         <div className="hidden lg:flex flex-[3] items-center justify-between">
           <div className="space-x-12 xl:space-x-24">
-            {navLinks.map((link, index) => (
-              <Link key={index} href={link.url} className={`text-2xl uppercase ${pathname === link.url && 'font-bold'}`}>
-                {link.label}
-              </Link>
-            )
-            )}
+            {navLinks.map((link, index) => {
+              const isActive = pathname === link.url || pathname.startsWith(`${link.url}/`);
+              return (
+                <Link key={index} href={link.url} className={`text-2xl uppercase ${isActive && 'font-bold'}`}>
+                  {link.label}
+                </Link>
+              )
+            })}
           </div>
           <div className="flex gap-8 ml-12">
             {reseaux.map((item, index) => (

@@ -10,7 +10,7 @@ const AboutMe = () => {
         <div className='relative size-48'>
           <Image
             src="/assets/images/profile-picture.png"
-            alt="Profile Picture"
+            alt='Profile Picture&apos;'
             fill
             className='object-cover rounded-full'
           />

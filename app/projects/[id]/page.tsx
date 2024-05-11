@@ -42,39 +42,35 @@ const Project = () => {
             ))}
           </ul>
         </div>
-        <Link href={`https://${project?.url}`} target="_blank" className="border border-black py-2 px-6 rounded-full font-semibold hover:bg-black hover:text-white-3 duration-300 min-w-[250px] lg:max-w-[300px] h-12 flex items-center justify-center lg:text-xl">
-          Voir le site
-        </Link>
+        {project?.finish ? (
+          <Link href={`https://${project?.url}`} target="_blank" className="border border-black py-2 px-6 rounded-full font-semibold hover:bg-black hover:text-white-3 duration-300 min-w-[250px] lg:max-w-[300px] h-12 flex items-center justify-center lg:text-xl">
+            Voir le site
+          </Link>
+        ) : (
+          <h2 className="font-bold italic text-xl">Projet non finis</h2>
+        )}
       </div>
-      {project?.finish ? (
-        <>
-          <p className="font-light mt-6 lg:text-xl">{project?.description}</p>
-          <div className='relative w-full h-[300px] sm:h-[400px] lg:h-[600px]'>
+      <p className="font-light mt-6 lg:text-xl">{project?.description}</p>
+      <div className='relative w-full h-[300px] sm:h-[400px] lg:h-[600px]'>
+        <Image
+          src={`/assets/images/${project?.screen}`}
+          alt="screen"
+          fill
+          className="object-cover rounded-xl"
+        />
+      </div>
+      <div className={`grid gap-6 sm:grid-cols-2 lg:grid-cols-3`}>
+        {project?.carroussel.map((item, index) => (
+          <div key={index} className="relative w-full h-[300px] sm:h-[200px]">
             <Image
-              src={`/assets/images/${project.screen}`}
-              alt="screen"
+              src={`/assets/images/${item}`}
+              alt="image"
               fill
               className="object-cover rounded-xl"
             />
           </div>
-          <div className={`grid gap-6 sm:grid-cols-2 lg:grid-cols-3`}>
-            {project?.carroussel.map((item, index) => (
-              <div key={index} className="relative w-full h-[300px] sm:h-[200px]">
-                <Image
-                  src={`/assets/images/${item}`}
-                  alt="image"
-                  fill
-                  className="object-cover rounded-xl"
-                />
-              </div>
-            ))}
-          </div>
-        </>
-      ) : (
-        <div className="w-full text-center text-3xl sm:text-5xl pt-24 font-bold">
-          <h1>Projet non finis</h1>
-        </div>
-      )}
+        ))}
+      </div>
     </section>
   )
 }

@@ -10,7 +10,7 @@ const AboutMe = () => {
         <div className='relative size-48'>
           <Image
             src="/assets/images/profile-picture.png"
-            alt='Profile Picture&apos;'
+            alt='image'
             fill
             className='object-cover rounded-full'
           />
@@ -35,7 +35,7 @@ const AboutMe = () => {
       </div>
       <Image
         src="/assets/images/accueil.png"
-        alt='Image accueil'
+        alt='image'
         width={600}
         height={480}
         className='object-cover hidden xl:flex'

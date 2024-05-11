@@ -60,6 +60,9 @@ const config = {
           1: "#EAF1FF",
           2: "#BFBFBF",
           3: "#FFFFFF",
+        },
+        project: {
+          1: '#222222',
         }
       },
       borderRadius: {

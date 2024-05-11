@@ -18,7 +18,7 @@ const Contact = () => {
             ))}
           </div>
         </div>
-        <div className='flex-1'>
+        <div className='flex-1 mt-12 lg:mt-0'>
           <FormContact />
         </div>
       </div>

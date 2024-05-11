@@ -46,7 +46,7 @@ const Project = () => {
           Voir le site
         </Link>
       </div>
-      {project?.finish === true ? (
+      {project?.finish ? (
         <>
           <p className="font-light mt-6 lg:text-xl">{project?.description}</p>
           <div className='relative w-full h-[300px] sm:h-[400px] lg:h-[600px]'>

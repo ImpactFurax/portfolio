@@ -15,7 +15,7 @@ const AboutMe = () => {
             className='object-cover rounded-full'
           />
         </div>
-        <h3 className='font-bold text-3xl xl:text-4xl'>Bonjour ! Je suis Jean,<br />
+        <h3 className='font-bold text-3xl xl:text-4xl'>Bonjour ! Je suis Jean<br />
           Développeur Web FullStack
         </h3>
         <p className='font-light md:text-lg lg:text-xl 2xl:text-2xl max-w-[600px]'>Passionné par la création de projets, de la conception à la réalisation du code.<br />
